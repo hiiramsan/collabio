@@ -1,5 +1,6 @@
 import mockups from "../assets/mockups.png";
 import phone from "../assets/phone.png";
+import blank from "../assets/blank.png";
 
 export default function LandingPage() {
   return (
@@ -123,9 +124,16 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="border-t border-slate-200 px-6 py-12">
-        <div className="max-w-6xl mx-auto flex justify-between items-center text-slate-600 text-sm">
-          <p>© 2025 BLNK. All rights reserved.</p>
-          <div className="flex gap-6">
+        <div className="max-w-6xl mx-auto flex items-center text-slate-600 text-sm w-full">
+          <div className="flex-1 text-left">
+            <p>© 2025 BLNK. All rights reserved.</p>
+          </div>
+
+          <div className="flex-1 flex justify-center">
+            <img src={blank} alt="Blank" className="h-8" />
+          </div>
+
+          <div className="flex-1 flex justify-end gap-6">
             <a href="#" className="hover:text-slate-900">
               Privacy
             </a>
