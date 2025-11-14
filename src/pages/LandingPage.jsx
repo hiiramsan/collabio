@@ -6,6 +6,13 @@ import tecLogo from "../assets/tec.webp";
 import ucaLogo from "../assets/UCA.jpg";
 import ucsfLogo from "../assets/ucsf.png";
 
+// Importa tus 5 imágenes de demostración aquí
+import demo1 from "../assets/demo1.png";
+import demo2 from "../assets/demo2.png";
+import demo3 from "../assets/demo3.png";
+import demo4 from "../assets/demo4.png";
+import demo5 from "../assets/demo5.png";
+
 export default function LandingPage() {
     return (
         <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
@@ -84,6 +91,150 @@ export default function LandingPage() {
                             <div className="w-16 h-16 rounded-full bg-pink-50 flex items-center justify-center text-2xl mb-4">✅</div>
                             <h3 className="text-xl font-semibold text-slate-900 mb-2">3. Colaborar</h3>
                             <p className="text-slate-600">Revisa el equipo sugerido, apruébalo y lanza tu proyecto instantáneamente con la confianza de que estás preparado para el éxito.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Demo Screenshots Gallery */}
+            <section className="px-6 py-20 bg-white">
+                <div className="max-w-7xl mx-auto">
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl md:text-5xl font-serif text-slate-900 mb-4">Ve Collabio en acción</h2>
+                        <p className="text-slate-600 max-w-2xl mx-auto">Descubre cómo nuestra plataforma simplifica la formación de equipos</p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {/* Demo 1 */}
+                        <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                            <img 
+                                src={demo1} 
+                                alt="Demostración 1 - Escanear QR" 
+                                className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-300"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <p className="text-white p-6 font-medium">Escanea el código QR de tu clase</p>
+                            </div>
+                        </div>
+
+                        {/* Demo 2 */}
+                        <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                            <img 
+                                src={demo2} 
+                                alt="Demostración 2 - Cuestionario" 
+                                className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-300"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <p className="text-white p-6 font-medium">Completa el cuestionario personalizado</p>
+                            </div>
+                        </div>
+
+                        {/* Demo 3 */}
+                        <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                            <img 
+                                src={demo3} 
+                                alt="Demostración 3 - Algoritmo" 
+                                className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-300"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <p className="text-white p-6 font-medium">El algoritmo crea equipos balanceados</p>
+                            </div>
+                        </div>
+
+                        {/* Demo 4 */}
+                        <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                            <img 
+                                src={demo4} 
+                                alt="Demostración 4 - Equipos" 
+                                className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-300"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <p className="text-white p-6 font-medium">Conoce a tus compañeros de equipo</p>
+                            </div>
+                        </div>
+
+                        {/* Demo 5 */}
+                        <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 md:col-span-2 lg:col-span-1">
+                            <img 
+                                src={demo5} 
+                                alt="Demostración 5 - Colaboración" 
+                                className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-300"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <p className="text-white p-6 font-medium">Comienza a colaborar de inmediato</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Demo Screenshots Gallery */}
+            <section className="px-6 py-20 bg-white">
+                <div className="max-w-7xl mx-auto">
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl md:text-5xl font-serif text-slate-900 mb-4">Ve Collabio en acción</h2>
+                        <p className="text-slate-600 max-w-2xl mx-auto">Descubre cómo nuestra plataforma simplifica la formación de equipos</p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {/* Demo 1 */}
+                        <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                            <img 
+                                src={demo1} 
+                                alt="Demostración 1 - Escanear QR" 
+                                className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-300"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <p className="text-white p-6 font-medium">Escanea el código QR de tu clase</p>
+                            </div>
+                        </div>
+
+                        {/* Demo 2 */}
+                        <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                            <img 
+                                src={demo2} 
+                                alt="Demostración 2 - Cuestionario" 
+                                className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-300"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <p className="text-white p-6 font-medium">Completa el cuestionario personalizado</p>
+                            </div>
+                        </div>
+
+                        {/* Demo 3 */}
+                        <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                            <img 
+                                src={demo3} 
+                                alt="Demostración 3 - Algoritmo" 
+                                className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-300"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <p className="text-white p-6 font-medium">El algoritmo crea equipos balanceados</p>
+                            </div>
+                        </div>
+
+                        {/* Demo 4 */}
+                        <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                            <img 
+                                src={demo4} 
+                                alt="Demostración 4 - Equipos" 
+                                className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-300"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <p className="text-white p-6 font-medium">Conoce a tus compañeros de equipo</p>
+                            </div>
+                        </div>
+
+                        {/* Demo 5 */}
+                        <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 md:col-span-2 lg:col-span-1">
+                            <img 
+                                src={demo5} 
+                                alt="Demostración 5 - Colaboración" 
+                                className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-300"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <p className="text-white p-6 font-medium">Comienza a colaborar de inmediato</p>
+                            </div>
                         </div>
                     </div>
                 </div>
